@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0b3d91;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5em;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #ffcc00;
+}
+
+/* Main Section */
+main {
+    flex: 1;
+    margin-top: 80px; /* offset for fixed header */
+    padding: 2rem 5%;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1.5em;
+    border: 3px solid #0b3d91;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#about h2 {
+    color: #0b3d91;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #0b3d91;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 0.9rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .intro {
+        flex-direction: row;
+        text-align: left;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .intro p {
+        max-width: 50%;
+        font-size: 1.1em;
+    }
+}
