@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header, footer {
+  padding: 1rem;
+  background-color: #e0e7ff;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Flexbox Layout */
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Box Styles */
+.box {
+  background-color: #ffffff;
+  padding: 20px 40px;
+  min-width: 150px;
+  border-width: 4px;
+  border-color: #4f46e5;
+  transition: border-color 0.3s ease;
+  border-radius: 8px;
+}
+
+.box.solid {
+  border-style: solid;
+}
+
+.box.dashed {
+  border-style: dashed;
+}
+
+.box.double {
+  border-style: double;
+}
+
+.box.groove {
+  border-style: groove;
+}
+
+/* Hover effect */
+.box:hover {
+  border-color: #f59e0b;
+}
