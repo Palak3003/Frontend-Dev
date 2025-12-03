@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  text-align: center;
+}
+
+header, footer {
+  background: #1e40af;
+  color: white;
+  padding: 1rem;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  gap: 2rem;
+}
+
+.box-demo div {
+  background: #fff;
+  border: 5px solid #2563eb;
+  padding: 20px;
+  margin: 20px;
+  outline: 2px dashed #93c5fd;
+  width: 200px;
+}
+
+.content-box { box-sizing: content-box; }
+.border-box { box-sizing: border-box; background: #bfdbfe; }
