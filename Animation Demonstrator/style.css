@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.animation-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+/* Moving box */
+.box {
+  width: 80px;
+  height: 80px;
+  background: #007bff;
+  animation: moveBox 3s ease-in-out infinite alternate;
+}
+
+@keyframes moveBox {
+  from { transform: translateX(0); }
+  to { transform: translateX(150px); }
+}
+
+/* Bouncing ball */
+.ball {
+  width: 60px;
+  height: 60px;
+  background: #ff5252;
+  border-radius: 50%;
+  animation: bounce 1.5s ease-in-out infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-80px); }
+}
+
+/* Color-changing text */
+.color-text {
+  font-size: 1.5rem;
+  animation: colorChange 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+  from { color: #333; }
+  to { color: #007bff; }
+}
