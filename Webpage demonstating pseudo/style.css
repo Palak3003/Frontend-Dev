@@ -1,0 +1,52 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  padding: 2em;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 1.5em;
+  border-radius: 8px;
+  width: 220px;
+}
+
+/* :hover example */
+.hover-demo {
+  color: #007BFF;
+  text-decoration: none;
+}
+.hover-demo:hover {
+  color: #fff;
+  background: #007BFF;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+}
+
+/* :focus example */
+.focus-demo:focus {
+  border: 2px solid #4CAF50;
+  outline: none;
+}
+
+/* :active example */
+.active-demo:active {
+  background: #ff5252;
+  color: #fff;
+}
+
+/* :nth-child example */
+.nth-demo li:nth-child(odd) {
+  background: #f0f0f0;
+}
+.nth-demo li:nth-child(even) {
+  background: #dff0ff;
+}
