@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f8f9fa;
+}
+
+.button-container {
+  display: flex;
+  gap: 1em;
+}
+
+.btn {
+  padding: 0.8em 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+/* Variants */
+.primary { background: #007bff; color: white; }
+.secondary { background: #6c757d; color: white; }
+.outline { background: transparent; border: 2px solid #007bff; color: #007bff; }
+
+/* States */
+.btn:hover { opacity: 0.9; }
+.btn:active { transform: scale(0.97); }
+.btn:focus { outline: 2px solid #333; }
+.btn:disabled {
+  background: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
