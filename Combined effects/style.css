@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f4f8;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.effect-container {
+  display: flex;
+  gap: 1.5em;
+}
+
+.effect-btn {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 8px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.effect-btn:hover {
+  transform: scale(1.1);
+  background: #0056b3;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.effect-btn:active {
+  transform: scale(0.95);
+  background: #003d80;
+}
+
+.effect-btn:focus {
+  outline: 3px solid #82baff;
+}
