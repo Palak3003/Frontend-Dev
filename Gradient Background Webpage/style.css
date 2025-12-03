@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+header, footer {
+  background-color: #111827;
+  padding: 1rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+header { top: 0; }
+footer { bottom: 0; }
+
+main {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.linear {
+  height: 100vh;
+  background: linear-gradient(120deg, #3b82f6, #8b5cf6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.radial {
+  height: 100vh;
+  background: radial-gradient(circle at center, #f59e0b, #b91c1c);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
