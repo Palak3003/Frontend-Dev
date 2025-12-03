@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  background: #f9fafb;
+  color: #111;
+  padding: 2rem;
+  text-align: justify;
+}
+
+header, footer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-family: 'Verdana', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+mark {
+  background-color: #fde68a;
+}
+
+strong {
+  color: #1d4ed8;
+}
+
+em {
+  color: #b91c1c;
+}
+
+/* Pseudo-elements */
+p::first-letter {
+  font-size: 1.8em;
+  color: #9333ea;
+  font-weight: bold;
+}
+p::first-line {
+  font-style: italic;
+}
