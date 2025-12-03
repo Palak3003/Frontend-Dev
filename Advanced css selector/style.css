@@ -1,0 +1,45 @@
+/* Attribute selectors */
+a[href^="https"] {
+  color: green;
+}
+
+/* Input type selector */
+input[type="text"] {
+  border: 2px solid #3b82f6;
+}
+
+/* Pseudo-classes */
+li:hover {
+  background-color: #e0f2fe;
+}
+input:focus {
+  outline: 2px solid #2563eb;
+}
+
+/* nth-child selector */
+.item-list li:nth-child(odd) {
+  background-color: #f3f4f6;
+}
+
+
+.note::after {
+  content: " (extra info)";
+}
+
+/* Combinators */
+ul > li {
+  padding: 0.5rem;
+}
+
+li + li {
+  border-top: 1px solid #ddd;
+}
+
+li ~ .note {
+  color: #b91c1c;
+}
+
+/* Descendant */
+ul li a {
+  text-decoration: none;
+}
