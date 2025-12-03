@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f2f5fa;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 0;
+  background: #1a237e;
+  color: white;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 4rem 5%;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  width: 30%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.lead {
+  background-color: #e8eaf6;
+  border: 2px solid #1a237e;
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
