@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+}
+
+header {
+  background: #263238;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffca28;
+}
+
+section {
+  padding: 12vh 10%;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Parallax / Fixed background */
+.fixed-bg {
+  background: url('shimla.jpg') center/cover no-repeat fixed;
+}
+
+/* Gradient backgrounds */
+.linear-gradient {
+  background: linear-gradient(120deg, #1e88e5, #42a5f5);
+}
+
+.radial-gradient {
+  background: radial-gradient(circle at center, #f48fb1, #ad1457);
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+
+footer {
+  background: #212121;
+  color: #ccc;
+  text-align: center;
+  padding: 1rem;
+}
