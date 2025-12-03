@@ -1,0 +1,39 @@
+/* Element selector */
+p {
+  color: #333;
+}
+
+/* Class selector */
+.info {
+  color: blue;
+}
+
+/* ID selector */
+#unique {
+  color: green;
+  font-weight: bold;
+}
+
+/* Attribute selector */
+a[title] {
+  text-decoration: none;
+  color: purple;
+}
+
+/* Combinators */
+div > p {
+  color: darkorange; /* direct child */
+}
+
+ul + div {
+  border-top: 2px solid #ccc; /* adjacent sibling */
+}
+
+p ~ a {
+  font-style: italic; /* general sibling */
+}
+
+body {
+  padding: 1em;
+  font-family: Arial, sans-serif;
+}
